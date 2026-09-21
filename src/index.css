@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .shadow-brutal-sm {
+    box-shadow: 2px 2px 0px #000000;
+  }
+  .shadow-brutal {
+    box-shadow: 4px 4px 0px #000000;
+  }
+  .shadow-brutal-lg {
+    box-shadow: 6px 6px 0px #000000;
+  }
+  .shadow-brutal-xl {
+    box-shadow: 8px 8px 0px #000000;
+  }
+  .shadow-brutal-hover {
+    transition: all 0.15s ease-in-out;
+  }
+  .shadow-brutal-hover:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px #000000;
+  }
+  .shadow-brutal-hover:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #000000;
+  }
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #111111;
+  background-color: #ffffff;
+}
+
+/* Admission letters marquee: single row, continuous left scroll */
+@keyframes marquee-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee-left 45s linear infinite;
+}
+
+.marquee-hover:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}
