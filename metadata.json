@@ -1,0 +1,6 @@
+{
+  "name": "John Carter - Personal Portfolio",
+  "description": "A neo-brutalist personal website featuring Vibe-coded creations, videos, articles, and a Study in China admission letters showcase.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
