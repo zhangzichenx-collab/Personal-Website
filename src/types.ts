@@ -14,7 +14,7 @@ export interface VibeProductItem {
   description: string;
   descriptionZh: string;
   descriptionRu?: string;
-  iconType: 'food' | 'prompt' | 'noise' | 'coming-soon';
+  iconType: 'food' | 'health' | 'prompt' | 'noise' | 'coming-soon';
   status: 'active' | 'beta' | 'coming-soon';
   link?: string;
   demoComponent?: string;

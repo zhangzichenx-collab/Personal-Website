@@ -43,7 +43,7 @@ interface HomeTabProps {
   onOpenContact: () => void;
   onOpenArticle: (article: ArticleItem) => void;
   onOpenVideo: (video: VideoItem) => void;
-  onOpenFoodModal: () => void;
+  onOpenFoodModal: (product: VibeProductItem) => void;
   onOpenAdmissionOffer: (offer: StudyInChinaOffer) => void;
 }
 
@@ -246,12 +246,18 @@ export const HomeTab: React.FC<HomeTabProps> = ({
 
         {/* Product Cards Grid - synced with ProductsTab via shared ProductCard */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          {vibeProductsData.slice(0, 1).map((product) => (
+          {vibeProductsData.slice(0, 2).map((product) => (
             <ProductCard
               key={product.id}
               product={product}
               lang={lang}
-              onOpen={onOpenFoodModal}
+              onOpen={(p) => {
+                if (p.link) {
+                  window.open(p.link, "_blank", "noopener,noreferrer");
+                } else {
+                  onOpenFoodModal(p);
+                }
+              }}
             />
           ))}
 

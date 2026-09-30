@@ -24,6 +24,25 @@ export const vibeProductsData: VibeProductItem[] = [
     iconType: "food",
     status: "active",
   },
+  {
+    id: "glycopulse",
+    itemNumber: "# 002",
+    releaseDate: "RELEASED ON 2026.09.19",
+    title: "GlycoPulse",
+    titleZh: "糖衡 GlycoPulse",
+    tagline: "CGM & Lifestyle Behavior Causal Analysis",
+    taglineZh: "连续动态血糖与生活行为因果分析",
+    description:
+      "Ever wondered why a bowl of noodles sends your blood sugar on a rollercoaster? See how every meal and post-meal walk sculpts your glucose curve on a 24h CGM chart.",
+    descriptionZh:
+      "一碗牛肉面为啥让血糖坐过山车？每一餐、每一次饭后散步怎么雕刻你的血糖曲线，打开全画给你看。",
+    titleRu: "ГликоПульс",
+    descriptionRu:
+      "Почему миска лапши заставляет сахар взлетать? Наглядно: как каждый приём пищи и прогулка после еды выстраивают твою гликемическую кривую на суточном графике CGM.",
+    iconType: "health",
+    status: "active",
+    link: "https://glycopulse-ten.vercel.app/",
+  },
 ];
 
 export const videosData: VideoItem[] = [

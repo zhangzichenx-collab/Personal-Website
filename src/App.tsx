@@ -151,10 +151,9 @@ export default function App() {
                 onNavigate={handleNavigate}
                 lang={lang}
                 onOpenProduct={(product) => {
-                  if (product.id === "what-to-eat") {
-                    setIsFoodModalOpen(true);
+                  if (product.link) {
+                    window.open(product.link, "_blank", "noopener,noreferrer");
                   } else {
-                    // For other products, open contact or preview
                     setIsFoodModalOpen(true);
                   }
                 }}
