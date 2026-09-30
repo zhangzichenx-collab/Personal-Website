@@ -18,9 +18,9 @@ export const ProductsTab: React.FC<ProductsTabProps> = ({
   const [searchQuery, setSearchQuery] = useState('');
 
   const filteredProducts = useMemo(() => {
-    // Only show released products: #001 邯郸美食排行榜, #002 GlycoPulse
+    // Only show released products: #001 邯郸美食排行榜, #002 GlycoPulse, #003 Dushanbe Garden
     const baseList = vibeProductsData.filter((p) =>
-      ['what-to-eat', 'glycopulse'].includes(p.id),
+      ['what-to-eat', 'glycopulse', 'dushanbe-garden'].includes(p.id),
     );
     if (!searchQuery.trim()) return baseList;
     const query = searchQuery.toLowerCase();

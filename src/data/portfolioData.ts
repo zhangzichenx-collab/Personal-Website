@@ -43,6 +43,25 @@ export const vibeProductsData: VibeProductItem[] = [
     status: "active",
     link: "https://glycopulse-ten.vercel.app/",
   },
+  {
+    id: "dushanbe-garden",
+    itemNumber: "# 003",
+    releaseDate: "RELEASED ON 2026.09.30",
+    title: "Dushanbe Garden",
+    titleZh: "塔吉克斯坦餐厅扫码点单系统",
+    tagline: "QR Ordering System MVP for a Tajik Restaurant",
+    taglineZh: "塔吉克斯坦餐厅扫码点单系统",
+    description:
+      "Scan a QR code at your table in Dushanbe and order in RU / TG / EN / ZH — menu, cart and table number 01–20, all in one flow.",
+    descriptionZh:
+      "在杜尚别坐下扫个码就能点，俄/塔/英三语随便切，桌号 01–20 一目了然，菜单和下单一步到位。",
+    titleRu: "Dushanbe Garden",
+    descriptionRu:
+      "MVP системы QR-заказа для ресторана в Душанбе: отсканируй код за столиком, выбери язык (RU/TG/EN/ZH) и закажи — столики 01–20, всё в одном потоке.",
+    iconType: "food",
+    status: "active",
+    link: "https://tajikesitan-restnurant-main.vercel.app/",
+  },
 ];
 
 export const videosData: VideoItem[] = [

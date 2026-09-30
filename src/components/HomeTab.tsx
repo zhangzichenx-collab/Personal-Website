@@ -246,7 +246,7 @@ export const HomeTab: React.FC<HomeTabProps> = ({
 
         {/* Product Cards Grid - synced with ProductsTab via shared ProductCard */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          {vibeProductsData.slice(0, 2).map((product) => (
+          {vibeProductsData.slice(0, 3).map((product) => (
             <ProductCard
               key={product.id}
               product={product}
